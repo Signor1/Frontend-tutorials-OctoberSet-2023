@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Display block = Occupies the default width of the browser, accepts height & width, and can't align beside each other
+
+Display inline-block = Does not occupy the default width of the browser, accepts height & width, and can align beside each other
+
+Display inline = Does not occupy the default width of the browser,
+does not accept height & width,
+and can align beside each other
+
+*/
+
+div {
+    display: inline;
+    width: 250px;
+    height: 250px;
+    background-color: firebrick;
+    margin: 10px;
+    color: white;
+}
+
+span {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    color: white;
+}
+
+/* Float */
+main {
+    width: 100%;
+}
+
+main .box {
+    display: block;
+    width: 300px;
+    height: 200px;
+    background-color: darkcyan;
+    float: left;
+}

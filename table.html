@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+
+    <table align="center" width="90%" border="1" cellpadding="10">
+        <caption>List of Kodex Students</caption>
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Batch</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Omenihu Gabriel</td>
+                <td>Product Design</td>
+                <td>October Batch</td>
+                <td rowspan="2">Still learning</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Uzodimma Gift</td>
+                <td>Full Stack Web Development</td>
+                <td>August Batch</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Chibuzor Edna</td>
+                <td>Data Analysis</td>
+                <td>January Batch</td>
+                <td>Alumni</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Philip Umeh</td>
+                <td>Mobile App Development</td>
+                <td>March Batch</td>
+                <td>Still learning</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Chukwuemeka Donald</td>
+                <td>Full Stack Web Development</td>
+                <td>May Batch</td>
+                <td>Dropped</td>
+            </tr>
+            <tr class="exclude">
+                <td colspan="3">Traning Lead</td>
+                <td colspan="2">Harry Chinedu</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border-color: #1b1b1b;
+        }
+
+        caption {
+            font-size: 1cm;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            margin-block: 2rem 0.5rem;
+            font-weight: 800;
+            color: transparent;
+            background-image: linear-gradient(to right, #1b1b1b, #E68815);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        table thead {
+            background-color: #1b1b1b;
+            color: #E68815;
+        }
+
+        tbody td {
+            text-align: center;
+        }
+
+        tbody tr:not(.exclude):hover {
+            background-color: rgba(230, 136, 21, 0.25);
+            cursor: pointer;
+        }
+
+        td[colspan] {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+
+</body>
+
+</html>

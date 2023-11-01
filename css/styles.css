@@ -1,0 +1,53 @@
+/* Element Selector  */
+h3 {
+    color: crimson;
+    font-size: 3rem;
+    text-align: center;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    padding: 12px 40px;
+    margin: 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+/* Class Selector  */
+.register {
+    background-color: transparent;
+    color: brown;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+
+.register:hover {
+    background-color: brown;
+    color: white;
+}
+
+/* Id selector  */
+#first {
+    color: darkcyan;
+}
+
+#last {
+    color: purple;
+    text-align: right;
+}
+
+/* Grouping selector */
+p,
+h1,
+h6 {
+    font-size: 1rem;
+    color: forestgreen;
+}
+
+/* Universal selector */
+* {
+    font-variant: small-caps;
+    background-color: lightblue;
+}

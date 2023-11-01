@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+h1 {
+    color: dodgerblue;
+    /* letter-spacing: 30px; */
+    text-align: center;
+    /* text-decoration: underline dashed red; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2cm;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 400;
+}
+
+p {
+    line-height: 40px;
+    /* word-spacing: 20px; */
+    text-align: justify;
+    text-indent: 15%;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HTML Form Elements  -->
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" value="Emmanuel" required autofocus>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" disabled>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password">
+
+        <!-- Number -->
+        <input type="number">
+
+        <!-- Tel -->
+        <input type="tel">
+
+        <!-- Search -->
+        <input type="search">
+
+        <!-- Dates -->
+        <input type="time">
+        <input type="week">
+        <input type="month">
+        <input type="date">
+        <input type="datetime-local">
+
+        <!-- Single File -->
+        <input type="file">
+        <!-- Multiple files -->
+        <input type="file" multiple>
+
+        <!-- Single Selection using Radio  -->
+        <br>
+        <label for="gender">Choose your gender</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other / Prefer not to say</label>
+
+        <!-- Multiple selection using checkbox -->
+        <br>
+        <label for="toppings">Choose your toppings</label>
+        <br>
+        <input type="checkbox" id="salad">
+        <label for="salad">Salad</label>
+        <input type="checkbox" id="beef">
+        <label for="beef">Beef</label>
+        <input type="checkbox" id="chicken">
+        <label for="chicken">Chicken</label>
+
+
+        <!-- Dropdown selection -->
+        <br>
+        <label for="states">Select State</label>
+        <select id="states" multiple size="3">
+            <option value="">choose your state</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Imo">Imo</option>
+            <option value="Ebonyi">Ebonyi</option>
+        </select>
+
+
+        <!-- Select with option group  -->
+        <label for="movie">Choose A Movie</label>
+        <select id="movie">
+            <option value="">Choose</option>
+            <optgroup label="Action">
+                <option value="">Mission Impossible II</option>
+                <option value="">Retribution</option>
+                <option value="">The Aquaman II</option>
+            </optgroup>
+            <optgroup label="Horror">
+                <option value="">The Nun II</option>
+                <option value="">Walking Dead</option>
+                <option value="">The Pope Exorcist</option>
+            </optgroup>
+        </select>
+
+        <!-- color -->
+        <input type="color">
+
+        <!-- Range -->
+        <input type="range" max="100" min="0" value="20">
+
+        <!-- URL -->
+        <input type="url">
+
+        <!-- text box -->
+        <textarea cols="30" rows="10" placeholder="Message" style="resize: none;"></textarea>
+
+
+        <!-- Buttons  -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Just Button</button>
+
+
+        <!-- vanillaJs, Typescript, jQuery, AJAX, svelte, HTMX, React, React native, Vue, angular, Next, nest, Nuxt
+
+        PHP, Python, Django, Laravel, Golang, NodeJS, ExpressJS, JAVA, Ruby -->
+
+    </form>
+
+</body>
+
+</html>
