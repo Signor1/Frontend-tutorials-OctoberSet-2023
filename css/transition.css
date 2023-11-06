@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Initial State */
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: saddlebrown;
+    cursor: progress;
+    /* transition effect */
+    /* transition-duration: 2s; */
+    /* duration of the transition*/
+    /* transition-timing-function: steps(3); */
+    /* other values of transition-timing-function are: ease-in, ease-out, ease-in-out, linear, cubic-brezier, steps */
+    /* transition-delay: 500ms;
+    transition-property: all; */
+    /* transition-property value can be "all" or list of css property we want to include into the transition effect */
+    transition: width 2s 0s, height 2s 2s, background-color 2s 4s, border-radius 2s 6s;
+}
+
+/* hovered state */
+.box:hover {
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    border-radius: 50%;
+}
