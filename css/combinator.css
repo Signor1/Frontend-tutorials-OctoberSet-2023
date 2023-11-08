@@ -1,0 +1,25 @@
+/* Descendant combinator */
+.parent h1 {
+    color: crimson;
+    font-size: 1.5cm;
+}
+
+/* Child combinator */
+.parent>p {
+    color: darkcyan;
+    font-size: 1cm;
+}
+
+/* General Sibling combinator  */
+/* li:first-child~li {
+    font-family: sans-serif;
+    color: forestgreen;
+    font-size: 2rem;
+} */
+
+/* Adjacent Sibling combinator  */
+li:first-child+li {
+    font-family: sans-serif;
+    color: forestgreen;
+    font-size: 2rem;
+}
