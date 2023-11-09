@@ -66,6 +66,29 @@
         </main>
     </article>
 
+
+    <!-- Pseudo class of valid and invalid -->
+    <form action="">
+        <div>
+            <input type="text" placeholder="Enter your name" pattern="[A-Za-z]{3,}" required>
+            <span class="error">Name should at least be upto 3 characters</span>
+            <span class="success">Correct</span>
+        </div>
+        <div>
+            <input type="email" placeholder="Enter your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required>
+            <span class="error">Your email is invalid</span>
+            <span class="success">Correct</span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your password" pattern=".{8,}" required>
+            <span class="error">Password should at least be upto 8 or more characters</span>
+            <span class="success">Strong Password</span>
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+
 </body>
 
 </html>
