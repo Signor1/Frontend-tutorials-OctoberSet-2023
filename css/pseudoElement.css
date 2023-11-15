@@ -92,3 +92,28 @@ main .card::before {
     font-size: 0.8rem;
     transform: rotate(-45deg);
 }
+
+
+/* Pseudo element of first-line, first-letter, selection */
+p.lead {
+    width: 80%;
+    font-size: 1.2rem;
+    margin-block: 3rem;
+    margin-inline: auto;
+}
+
+p.lead::first-line {
+    text-transform: uppercase;
+}
+
+p.lead::first-letter {
+    font-size: 4rem;
+    color: crimson;
+    padding: 0 10px 0 0;
+    float: left;
+}
+
+p.lead::selection {
+    background-color: lightpink;
+    color: brown;
+}

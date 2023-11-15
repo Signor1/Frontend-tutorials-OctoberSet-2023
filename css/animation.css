@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: hotpink;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    /* animation */
+    animation-name: ball-move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+/* One way movement */
+/* @keyframes ball-move {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 95%;
+    }
+} */
+
+/* zig-zag movement */
+@keyframes ball-move {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 100%;
+        left: 45%;
+    }
+
+    50% {
+        top: 0%;
+        left: 95%;
+    }
+
+    75% {
+        top: 100%;
+        left: 45%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.clock {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid sienna;
+    position: relative;
+}
+
+.clock::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: sienna;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.clock .sec {
+    width: 1px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    top: 25px;
+    transform-origin: bottom;
+    animation: second-hand 60s steps(60) infinite;
+}
+
+@keyframes second-hand {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
